@@ -6,7 +6,6 @@
   "types": "dist/index",
   "author": "nox <nimrod.nox@gmail.com>",
   "license": "MIT",
-  "private": false,
   "scripts": {
     "build": "rimraf dist && tsc",
     "prepublish": "npm run build"
