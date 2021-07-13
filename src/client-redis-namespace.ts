@@ -7,7 +7,7 @@ export class RedisNamespaceClient extends ClientRedis {
   constructor(options: RedisNamespaceOptions) {
     super(options);
     if (options.namespace) {
-      this.namespace = options.namespace + ':';
+      this.namespace = `${options.namespace}:`;
     }
   }
 
@@ -23,7 +23,7 @@ export class RedisNamespaceClient extends ClientRedis {
 
   protected async dispatchEvent(packet: ReadPacket) {
     const { pattern } = packet;
-    packet.pattern = this.namespace + pattern;
+    packet.pattern = `${this.namespace}${pattern}`;
     return super.dispatchEvent(packet);
   }
 }

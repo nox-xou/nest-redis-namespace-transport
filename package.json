@@ -2,12 +2,13 @@
   "name": "@noxnox/nest-redis-namespace-transport",
   "version": "1.0.3",
   "description": "Redis with namespace for NestJS transport",
-  "main": "dist/index",
-  "types": "dist/index",
+  "main": "dist",
+  "types": "dist",
   "author": "nox <nimrod.nox@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "prebuild": "rimraf dist", 
+    "build": "nest build",
     "prepack": "npm run build"
   },
   "dependencies": {
