@@ -1,5 +1,5 @@
-import { ServerRedis, MessageHandler } from "@nestjs/microservices";
-import { RedisNamespaceOptions } from "./redis-namespace-options.interface";
+import { ServerRedis, MessageHandler } from '@nestjs/microservices';
+import { RedisNamespaceOptions } from './redis-namespace-options.interface';
 
 export class RedisNamespaceServer extends ServerRedis {
   private namespace = '';

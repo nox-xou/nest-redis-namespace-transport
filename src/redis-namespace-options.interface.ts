@@ -1,4 +1,4 @@
-import { RedisOptions } from "@nestjs/microservices";
+import { RedisOptions } from '@nestjs/microservices';
 
 export declare type RedisNamespaceOptions = RedisOptions['options'] &
   NamespaceOption;

@@ -1,5 +1,5 @@
-import { ClientRedis, ReadPacket } from "@nestjs/microservices";
-import { RedisNamespaceOptions } from "./redis-namespace-options.interface";
+import { ClientRedis, ReadPacket } from '@nestjs/microservices';
+import { RedisNamespaceOptions } from './redis-namespace-options.interface';
 
 export class RedisNamespaceClient extends ClientRedis {
   private namespace = '';
