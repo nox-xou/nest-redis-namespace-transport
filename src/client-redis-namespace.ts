@@ -52,7 +52,7 @@ export class RedisNamespaceClient extends ClientRedis {
     let { pattern } = packet;
 
     if (typeof pattern === 'string' || typeof pattern === 'number') {
-      pattern = { namespace: this.namespace, cmd: pattern };
+      pattern = `${this.namespace}:${pattern}`;
     } else if (typeof pattern === 'object' && pattern !== null) {
       pattern = { namespace: this.namespace, ...pattern };
     }
