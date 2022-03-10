@@ -1,6 +1,6 @@
 {
   "name": "@noxnox/nest-redis-namespace-transport",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Redis with namespace for NestJS transport",
   "main": "dist",
   "types": "dist",
