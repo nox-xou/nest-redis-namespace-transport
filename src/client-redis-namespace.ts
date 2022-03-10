@@ -27,7 +27,6 @@ export class RedisNamespaceClient extends ClientRedis {
     }
 
     pattern = super.getRequestPattern(pattern);
-    console.log('getRequestPattern', pattern);
 
     return pattern;
   }
@@ -45,7 +44,6 @@ export class RedisNamespaceClient extends ClientRedis {
     }
 
     pattern = super.getReplyPattern(pattern);
-    console.log('getReplyPattern', pattern);
 
     return pattern;
   }
@@ -60,8 +58,6 @@ export class RedisNamespaceClient extends ClientRedis {
     }
 
     pattern = transformPatternToRoute(pattern);
-
-    console.log('dispatchEvent pattern', pattern);
 
     packet.pattern = pattern;
     return super.dispatchEvent(packet);

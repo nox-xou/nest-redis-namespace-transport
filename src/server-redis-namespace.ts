@@ -20,20 +20,17 @@ export class RedisNamespaceServer extends ServerRedis {
     }
 
     pattern = transformPatternToRoute(pattern);
-    console.log('addHandler', pattern);
 
     super.addHandler(pattern, callback, isEventHandler);
   }
 
   getRequestPattern(pattern: string): string {
     pattern = super.getRequestPattern(pattern);
-    console.log('getRequestPattern', pattern);
 
     return pattern;
   }
   getReplyPattern(pattern: string): string {
     pattern = super.getReplyPattern(pattern);
-    console.log('getReplyPattern', pattern);
 
     return pattern;
   }
