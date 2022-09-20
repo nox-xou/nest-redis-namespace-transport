@@ -2,8 +2,8 @@
   "name": "@noxnox/nest-redis-namespace-transport",
   "version": "1.1.2",
   "description": "Redis with namespace for NestJS transport",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "author": "nox <nimrod.nox@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -13,10 +13,10 @@
     "prepack": "npm run build"
   },
   "dependencies": {
-    "@nestjs/common": "^8.4.0",
-    "@nestjs/core": "^8.4.0",
-    "@nestjs/microservices": "^8.4.0",
-    "redis": "^3",
+    "@nestjs/common": "^9.1.1",
+    "@nestjs/core": "^9.1.1",
+    "@nestjs/microservices": "^9.1.1",
+    "ioredis": "^5.2.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.5"
   },
