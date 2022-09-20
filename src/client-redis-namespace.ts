@@ -1,5 +1,4 @@
-import { isNumber } from '@nestjs/common/utils/shared.utils';
-import { ClientRedis, MsPattern, ReadPacket } from '@nestjs/microservices';
+import { ClientRedis, ReadPacket } from '@nestjs/microservices';
 import { RedisNamespaceOptions } from './redis-namespace-options.interface';
 import { transformPatternToRoute } from './utiles/transform-pattern.utils';
 
